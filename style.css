@@ -1,0 +1,41 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+header
+{
+    background-color: green;
+    text-align: center;
+    font-family: sans-serif;
+    padding:10px;
+}
+footer
+{
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+}
+
+.navigation
+{
+    background-color: red;
+    width: 163px;
+    height: 100vh;
+    float: left;
+    margin-left: 30.5%;
+    padding: 20px;
+    margin-right:20px;
+}
+
+.content
+{
+    color: black;
+    padding: 20px;
+    margin-right: 375px;
+}

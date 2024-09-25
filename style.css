@@ -39,3 +39,9 @@ footer
     padding: 20px;
     margin-right: 375px;
 }
+
+.navigation > div
+{
+    margin-bottom: 10px;
+    font-size: 15px;
+}

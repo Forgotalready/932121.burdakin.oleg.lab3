@@ -4,13 +4,13 @@
     margin: 0;
     box-sizing: border-box;
     color: white;
+    font-family: sans-serif;
 }
 
 header
 {
     background-color: green;
     text-align: center;
-    font-family: sans-serif;
     padding:10px;
 }
 footer
@@ -24,24 +24,56 @@ footer
 
 .navigation
 {
+    grid-column: 2;
     background-color: red;
-    width: 163px;
-    height: 100vh;
-    float: left;
-    margin-left: 30.5%;
-    padding: 20px;
-    margin-right:20px;
-}
+    height: calc(100vh - 60px);
+    padding: 35px 20px 0px 50px;
 
+}
 .content
 {
     color: black;
-    padding: 20px;
-    margin-right: 375px;
+    grid-column: 3;
+    padding: 30px 0px 0px 30px;
+    font-size: 17px;
 }
 
 .navigation > div
 {
     margin-bottom: 10px;
     font-size: 15px;
+}
+
+.navigation > div:hover
+{
+    background-color: green;
+}
+
+
+.main
+{
+    display: grid;
+    grid-template-columns: 560px 200px 600px;
+    grid-auto-flow: column;
+}
+
+.content::selection, .content > span::selection
+{
+    background-color: green;
+}
+
+@media (max-width: 1460px)
+{
+    .main
+    {
+        grid-template-columns: 200px 600px;
+    }
+    .navigation
+    {
+        grid-column: 1;
+    }
+    .content
+    {
+        grid-column: 2;
+    }
 }
